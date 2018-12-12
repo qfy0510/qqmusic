@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Myapp</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="assets/css/weui.min.css"> 
+  <!-- <link rel="stylesheet" href="assets/css/jquery-weui.min.css"> -->
+  <!-- <link rel="stylesheet" href="assets/css/demos.css"> -->
+  <link rel="stylesheet" href="assets/css/swiper.min.css">
+</head>
+<body>
+  <div class="wrap">
+    <nav class="nav">
+       <span class="logo"></span>  
+       <span class="down">下载APP</span>
+    </nav>
+    <app-root></app-root>
+</div>
+
+</body>
+<script src="assets/js/jquery-2.1.4.js"></script>
+<script src="assets/js/swiper.min.js"></script>
+<script src="assets/js/fastclick.js"></script>
+<script src="assets/js/jquery-weui.js"></script>
+<script>
+  var swiper = new Swiper('.swiper-container', {
+      pagination: '.swiper-pagination',
+      paginationClickable: true,
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: 2500,
+      autoplayDisableOnInteraction: false
+  });
+  // window.onload = function(){
+  //   var searchInput = document.getElementById('searchInput');
+  //   var searchCancel = document.getElementById('searchCancel');
+  //   var hot = document.getElementById('hot');
+  //   searchInput.onfocus = function(){
+  //     hot.style.display='none';
+  //   }
+  //   searchCancel.onclick = function(){
+  //     hot.style.display='block';
+  //   }
+  // }
+
+  $(function(){
+      $("#searchInput").focus(function(){
+        $("#hot").css('display','none');
+      })
+      $("#searchCancel").click(function(){
+        $("#hot").css('display','block');
+      })
+      // $('.list').click(function(){
+      //   $(".nav").css('display','none');
+      //   $(".header").css('display','none');  
+      // });
+         
+      
+  });
+  </script>
+</html>

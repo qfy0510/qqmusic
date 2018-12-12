@@ -1,0 +1,37 @@
+<div class="listcontent">
+    <div class="top">
+        <img src="../../assets/images/logo.svg">
+        <div class="list-logo">
+            <h3>QQ音乐</h3>
+            <p>打开app收藏、下载</p>
+        </div>
+        <div class="right">
+            <span>打开</span>
+        </div>  
+    </div>
+    <div class="list-banner clearfix">
+        <div class="banner-left">
+            <img src="{{content.src}}">
+        </div>
+        <div class="banner-title">
+            <h3>{{content.title}}</h3>
+            <p>第300天</p>
+            <p>2018-10-27更新</p>
+        </div>
+    </div>
+    <div class="play-now clearfix">
+        <a href="" class="play-btn">立即播放</a>
+    </div>
+</div>
+<div class="list-sort">
+    <h3>排行榜</h3>
+    <ul>
+       <li *ngFor="let item of content.sort;let i = index"><span>{{i+1}}、 </span>{{item}}</li>
+    </ul>
+
+</div>
+
+
+
+
+

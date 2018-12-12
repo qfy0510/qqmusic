@@ -1,0 +1,62 @@
+.list{
+   margin:10px 10px;
+   display:flex;
+}
+.list .topic{
+    float:left;
+    width:1rem;
+    height:1rem;
+    
+}
+.topic img{
+    width:100%;
+}
+.list .con{
+    overflow: hidden;
+    position: relative;
+    float:left;
+    flex:1;
+    padding-left:10px;
+    background:#fff;
+    height:1rem;
+}
+.list .con h3{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size: 16px;
+    color:#000;
+    margin-bottom:5px;
+    padding:5px;
+}
+.list .con p{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color:#333;
+    font-size:14px;
+    line-height:1.5;
+    width:90%;
+    
+}
+.list .con p span{
+    margin:0 5px;
+    
+}
+.list i{
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    margin-top: -4px;
+    width: 6px;
+    height: 6px;
+    border-right: 1px solid #b2b2b2;
+    border-bottom: 1px solid #b2b2b2;
+    transform: rotate(-45deg);
+}
+.find_music{
+    height:.5rem;
+    line-height:.5rem;
+    text-align: center;
+    font-size:.14rem;
+}

@@ -1,0 +1,25 @@
+<div class="search">
+    <div class="weui-search-bar search-box" id="searchBar">
+        <form class="weui-search-bar__form">
+            <div class="weui-search-bar__box">
+                <i class="weui-icon-search"></i>
+                <input type="search" class="weui-search-bar__input" id="searchInput" placeholder="搜索歌曲、歌单、专辑" required="">
+                <a href="javascript:" class="weui-icon-clear" id="searchClear"></a>
+            </div>
+           <label class="weui-search-bar__label" id="searchText">
+                <i class="weui-icon-search"></i>
+                <span>搜索歌曲、歌单、专辑</span>
+            </label>
+        </form>
+        <a href="javascript:" class="weui-search-bar__cancel-btn" id="searchCancel">取消</a>
+    </div>
+  
+    <div class="hot-search" id="hot">
+        <h3>热门搜索</h3>
+        <ul class="hot-title">
+          <li *ngFor="let item of search">
+            <a href="">{{item}}</a>
+          </li>
+        </ul>
+    </div>
+</div>
